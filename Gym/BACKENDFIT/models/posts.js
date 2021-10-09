@@ -1,0 +1,53 @@
+const mongoose = require('mongoose');
+
+const postSchema=new mongoose.Schema({
+    topic:{
+        type:String,
+        required:false
+    },
+    meal:{
+        type:String,
+        required:false
+    },
+    supplement:{
+        type:String,
+        required:false
+    },
+    preworkout:{
+        type:String,
+        required:false
+    },
+    creatine:{
+        type:String,
+        required:false
+    },
+    training_type:{
+        type:String,
+        required:false
+    },
+    chart_type:{
+        type:String,
+        required:false
+    },
+    chart:{
+        type:String,
+        required:false
+    },
+    trainer_id:{
+        type:String,
+        required:false
+    },
+    chart_works:{
+        type:String,
+        required:false
+    },
+    prev_training:{
+        type:String,
+        required:false
+    },
+    intake:{
+        type:String,
+        required:false
+    }
+});
+module.exports=mongoose.model('Posts',postSchema);
